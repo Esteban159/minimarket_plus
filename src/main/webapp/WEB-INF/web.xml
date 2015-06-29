@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>nuevoUsuarioServlet</servlet-name>
+        <servlet-class>pe.uni.fiis.aplicativo.control.NuevoUsuarioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>nuevoUsuarioServlet</servlet-name>
+        <url-pattern>/nuevousuario</url-pattern>
+    </servlet-mapping>
 </web-app>
