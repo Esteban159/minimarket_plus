@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head lang="es">
@@ -23,55 +24,44 @@
     <div class="well container col-md-8 col-md-offset-2 header23">
         <div class="row" >
             <div class="col-md-12 ">
-                <form class="form-horizontal" action="nuevousuario" method="post">
+                <c:form class="form-horizontal" action="registrar" method="post" >
                     <div class="form-group">
                         <label  class="col-md-2 control-label">NOMBRES:</label>
                         <div class="col-md-7">
-                            <input type="text" class="form-control" id="nombres" placeholder="NOMBRES" required/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label  class="col-md-2 control-label">APELLIDOS</label>
-                        <div class="col-md-7">
-                            <input type="text" class="form-control" id="apellidos" placeholder="APELL. PATER." required/>
+                            <c:input path="nombre" type="text" class="form-control" id="nombres" placeholder="NOMBRES"/>
+
                         </div>
                     </div>
                     <div class="form-group">
                         <label  class="col-md-2 control-label">DIRECCIÓN:</label>
                         <div class="col-md-7">
 
-                            <input type="text" class="form-control" id="direccion" placeholder="DIRECCIÓN" required/>
+                            <c:input path="direccionMinimarket" type="text" class="form-control" id="direccion" placeholder="DIRECCIÓN" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label">NEGOCIO:</label>
                         <div class="col-md-7">
-                            <input type="text" class="form-control" id="negocio" placeholder="NOMBRE DEL MINIMARKET" required/>
+                            <c:input path="nombreMinimarket" type="text" class="form-control" id="negocio" placeholder="NOMBRE DEL MINIMARKET"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label  class="col-md-2 control-label">TELÉFONO:</label>
                         <div class="col-md-7">
 
-                            <input pattern="[0-9]{7}"class="form-control" id="telefono" placeholder="TELÉFONO">
+                            <c:input path="telefono" pattern="[0-9]{7}" class="form-control" id="telefono" placeholder="TELÉFONO"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label  class="col-md-2 control-label">EMAIL:</label>
                         <div class="col-md-7">
-                            <input type="email" class="form-control" id="email" placeholder="Ejemplo@example.com" required/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label  class="col-md-2 control-label">RUC:</label>
-                        <div class="col-md-7">
-                            <input type="number" class="form-control" id="ruc" placeholder="RUC"/>
+                            <c:input path="email" type="email" class="form-control" id="email" placeholder="Ejemplo@example.com" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label">CUI:</label>
                         <div class="col-md-7">
-                            <input pattern="[0-9]{8}" class="form-control" id="cui" placeholder="CUI" required/>
+                            <c:input path="cui" pattern="[0-9]{8}" class="form-control" id="cui" placeholder="CUI" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -95,7 +85,7 @@
                             <button type="submit" class="btn btn-primary">CREAR NUEVA CUENTA</button>
                         </div>
                     </div>
-                </form>
+                </c:form>
             </div>
 
         </div>
