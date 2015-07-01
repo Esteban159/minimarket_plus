@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by User on 28/06/2015.
  */
-public class ComprobanteDaoimpl implements ComprobanteDao{
+public class ComprobanteDaoImpl implements ComprobanteDao{
     private JdbcTemplate jdbcTemplate;
 
     public JdbcTemplate getJdbcTemplate() {

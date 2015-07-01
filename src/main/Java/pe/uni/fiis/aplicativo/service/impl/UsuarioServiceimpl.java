@@ -7,15 +7,17 @@ import pe.uni.fiis.aplicativo.bean.Usuario;
 import pe.uni.fiis.aplicativo.dao.UsuarioDao;
 import pe.uni.fiis.aplicativo.service.UsuarioService;
 
+import java.util.List;
+
 /**
  * Created by User on 29/06/2015.
  */
 @Service
 @Transactional
-public class UsuarioServiceimpl implements UsuarioService{
+public class UsuarioServiceImpl implements UsuarioService{
     @Autowired
     private UsuarioDao usuarioDao;
-    public Usuario serviceobtener(Usuario u) {
+    public List<Usuario> serviceobtener(Usuario u) {
         return usuarioDao.obtener(u);
     }
     public void serviceaddusuario(Usuario u) {

@@ -3,10 +3,8 @@ package pe.uni.fiis.aplicativo.dao.impl;
 import org.springframework.jdbc.core.JdbcTemplate;
 import pe.uni.fiis.aplicativo.bean.LoteDeproducto;
 import pe.uni.fiis.aplicativo.bean.Pedido;
-import pe.uni.fiis.aplicativo.bean.Proveedor;
 import pe.uni.fiis.aplicativo.bean.Usuario;
 import pe.uni.fiis.aplicativo.dao.PedidoDao;
-import pe.uni.fiis.aplicativo.dao.impl.LoteDeProductoDaoimpl;
 import pe.uni.fiis.aplicativo.dao.mapper.LoteDeproductoMapper;
 import pe.uni.fiis.aplicativo.dao.mapper.PedidoMapper;
 
@@ -16,7 +14,7 @@ import java.util.List;
 /**
  * Created by User on 28/06/2015.
  */
-public class PedidoDaoimpl implements PedidoDao{
+public class PedidoDaoImpl implements PedidoDao{
     private JdbcTemplate jdbcTemplate;
 
     public JdbcTemplate getJdbcTemplate() {

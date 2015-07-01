@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Oracle - xe@localhost" uuid="041b1ceb-b976-493c-a208-639e1c19f0dc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Oracle - @localhost" uuid="e839ecef-5eaf-43e3-94db-0aa8fd6bc882">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
